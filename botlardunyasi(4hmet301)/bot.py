@@ -40,7 +40,12 @@ async def on_message(message):
     else:
         if bilgi_mesaji["echo"] == "true":
             await message.channel.send(message.content)
-        
+
+@client.event
+async def on_member_join(member):
+    # Karşılama mesajı gönderme
+    for channel in member.guild.text_channels:
+        await channel.send(f’ Hoş geldiniz: , {member.mention}!')
 
 @client.command()
 async def about(ctx):
