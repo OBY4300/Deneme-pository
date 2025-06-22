@@ -2,5 +2,5 @@
 Burada Discord botları için yazılmış kodlar var.
 
 # Kullanım
-  -Bot dalındaki kodlarda bot.run() (bot.run()'ın içindeki tokeniniz bir string olmalı) veya config.py gibi yerlere tokeninizi koyup çalıştırmayı unutmayın.
-  -Dediğim gibi: Kullandığınız kodlara ismimi yazmanıza falan gerek yok.
+- Bot dalındaki kodlarda bot.run() (bot.run()'ın içindeki tokeniniz bir string olmalı) veya config.py gibi yerlere tokeninizi koyup çalıştırmayı unutmayın.
+- Dediğim gibi, kullandığınız kodlara ismimi yazmanıza falan gerek yok.
