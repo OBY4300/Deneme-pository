@@ -1,4 +1,5 @@
--- database: /Users/orhanberk/Desktop/Kodland Derslerim/Visual Studio Klasörü/tutorial.db
+-- database: Gizli Dosya Patikası
+
 
 SELECT * FROM movie
 where YEAR = 1982;
