@@ -1,0 +1,33 @@
+#tuple değiştirilemez
+
+import sqlite3 
+# Veri tabanı dosyasını açma
+con = sqlite3.connect('marveli.db')
+# Tablo oluşturma
+with con:
+    con.execute("DROP TABLE IF EXISTS marveli")
+    con.execute("""
+        CREATE TABLE marveli (
+            ID INTEGER PRIMARY KEY,
+            namei TEXT,
+            supeirpower TEXT,
+            statuis TEXT
+);
+    """)
+
+# Sorguyu hazırlama
+sql = 'INSERT INTO marvel (ID, name, superpower, status) values(?, ?, ?, ?)'
+# Sorgu için veri tanımlama
+data = [
+    (1, 'Hulk', 'İnsanüstü güç', 'İyi'),
+    (2, 'Thor', 'Mjölnir', 'İyi'),
+]
+# İteratif sorgu kullanarak tüm verileri bir kerede ekleme
+with con:
+    con.executemany(sql, data)
+isim=input("hangi kahraman ? : ")
+durum=input("durumu nasıl olsun ?: ")
+
+# Hulk'un durumunu güncelleme
+with con:
+    con.execute("UPDATE marvel SET status = ? WHERE name = ?",(durum,isim))

@@ -1,0 +1,22 @@
+-- database: ./tutorial 2.db
+
+SELECT * FROM movie;
+
+SELECT title FROM movie;
+
+SELECT year, title FROM
+movie ORDER BY SCORE DESC;
+
+UPDATE movie SET score = 6.7
+WHERE title = "A";
+
+DELETE FROM movie where year = 1975;
+
+SELECT title, score from movie
+where score = (SELECT min(score) from movie);
+
+SELECT * from movie
+where score = (SELECT score > 7 from movie);
+
+SELECT AVG(score) from movie where year = 1979;
+where score = 

@@ -1,0 +1,2 @@
+token = ""
+DATABASE = "portfoy.db"

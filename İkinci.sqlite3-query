@@ -1,0 +1,10 @@
+-- database: /Users/orhanberk/Desktop/Kodland Derslerim/Visual Studio Klasörü/tutorial.db
+
+SELECT * FROM movie
+where YEAR = 1982;
+
+SELECT AVG(score) FROM movie
+where score > (SELECT AVG(score) from movie)
+ORDER by score DESC;
+
+--Bu bir yorum satırı dsfojkdkşj
