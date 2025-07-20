@@ -9,5 +9,4 @@ Burada genellikle *deneysel* kodlar var:
 - (Yukarıdaki listede bahsettiğim ögeler depoda bulunmuyorsa daha vakti gelmemiş demektir.)
 
 # Kullanım
--Bot dalındaki kodlarda bot.run() (bot.run()'ın içindeki tokeniniz bir string olmalı) veya config.py gibi yerlere tokeninizi koyup çalıştırmayı unutmayın.
--Kullandığınız kodlara ismimi yazmanıza falan gerek yok.
+Kodlarımı çalabilirsiniz. Hiçbir yere OBY diye falan yazmanıza gerek yok, fakat yaparsanız sevinirim!
