@@ -1,2 +1,4 @@
-token = ""
-DATABASE = "portfoy.db"
+TOKEN = 'Bot tokeniniz'
+DATABASE = 'portfolio.db'
+
+token = "Bot tokeniniz"
